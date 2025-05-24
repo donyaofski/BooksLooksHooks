@@ -1,7 +1,112 @@
-
 body {
-  font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    background-color: #F9F5EB;
+    color: #333333;
+    margin: 0;
+    padding: 0 20px 40px 20px;
 }
-.logo {
-  font-size: 1.5rem;
+
+header {
+    text-align: center;
+    padding: 40px 10px 20px 10px;
+    color: #0B3D91;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 0.2rem;
+    letter-spacing: 2px;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #D4AF37;
+    letter-spacing: 1.5px;
+}
+
+#about {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: center;
+    color: #555555;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #0B3D91;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+#quotes {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+}
+
+.quote-card {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.07);
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.quote-card:hover {
+    box-shadow: 0 0 20px #D4AF37;
+}
+
+blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    color: #0B3D91;
+    line-height: 1.4;
+    quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before {
+    content: open-quote;
+    font-size: 2.5rem;
+    vertical-align: top;
+    color: #D4AF37;
+    margin-right: 6px;
+}
+
+blockquote:after {
+    content: close-quote;
+    font-size: 2.5rem;
+    vertical-align: bottom;
+    color: #D4AF37;
+    margin-left: 6px;
+}
+
+.author {
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.note {
+    font-style: italic;
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    color: #999999;
+    font-size: 0.9rem;
 }
